@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>Ambassador | Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/wine_icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet">
+
+
+  </head>
+
+<body>
+  <div class="MAINcontainer">
+
+    <navbar>
+      <nav>
+        <a id="navbar-brand" href="index.html">
+          <img src="images/ambassador_logo.png">
+        </a>
+        <hr size="4" noshade>
+        <hr noshade>
+
+        <ul>
+          <li id="title">—The only thing we love more than food is you—</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </nav>
+    </navbar>
+    <hr noshade>
+    <hr size="4" noshade>
+    <div class="space-line">
+      </div>
+
+
+      <style type="text/css">
+        #theDate {
+          text-align: center;
+          padding: 1%;
+        }
+        </style>
+
+      <script type="text/javascript" id="theDate">
+
+      function initArray() {
+
+        this.length = initArray.arguments.length;
+        for (var i = 0; i < this.length; i++)
+        this[i+1] = initArray.arguments[i];
+      }
+
+      var TAB = "\t";
+
+      var dayArray = new initArray("Sunday","Monday", "Tuesday","Wednesday"
+      ,"Thursday","Friday","Saturday");
+
+      var monthArray = new initArray("January","February","March",
+      "April","May","June","July", "August","September","October",
+      "November","December");
+
+      var nu = new Date();
+      var daily = dayArray[(nu.getDay()+1)];
+      var day = nu.getDate();
+      var month = monthArray[(nu.getMonth()+1)];
+      var year = nu.getYear();
+      var theYear = ((year < 1900) ? (year + 1900) : (year));
+
+      var theDate = (daily + ", " + month + " " + day + ", " + theYear );
+
+      //document.write(theDate);
+      document.write('<div id="theDate">'
+      + "Houghton, MI "
+      + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + theDate
+
+      + '</div>')
+
+      </script>
+
+      <hr noshade>
+
+      <h1 id="menu1" >Menu</h1>
+
+      <div id="box-wrapper">
+
+        <div>
+          <h4 class="MENUFONT-1st">Pizza</h4>
+          <h5 class="MENUFONT-2nd">TOSTADA</h5>
+          <blockquote class="MENUFONT-3rd">
+            Spiced Ground Beef baked on a Homemade Thin Crust, covered
+            with White Colby Cheese, Lettuce, Tomatoes and Cheddar Cheese
+            topped with Hot Sauce. Choose between 10, 12, and 14 inches.<br>
+            <b>$12.39/$14.99/$17.79</b>
+          </blockquote>
+
+          <h5 class="MENUFONT-2nd">GREEK</h5>
+          <blockquote class="MENUFONT-3rd">
+            White Colby, Fresh Spinach, Tomatoes, Black and Green Olives, Feta
+            Cheese, Oregano and Garlic Olive Oil. Choose between 10, 12, and 14
+            inches.<br>
+            <b>$12.89/$15.59/$19.59</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Pizza List</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <div>
+          <h4 class="MENUFONT-1st">Pasta</h4>
+          <h5 class="MENUFONT-2nd">LASAGNA</h5>
+          <blockquote class="MENUFONT-3rd">
+            Herbed Ricotta Cheese & our Homemade Italian Meat Sauce layered with
+            Wisconsin Cheddar, Mozzarella, & White Colby Cheese. Served with
+            Garlic Toast.<br>
+            <b>$11.59</b>
+          </blockquote>
+          <h5 class="MENUFONT-2nd">SPAGHETTI</h5>
+          <blockquote class="MENUFONT-3rd">
+            Available in small or large sizes, and with or without meatballs.<br>
+            <b>$6.99/$8.99</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Pasta List</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <div>
+          <h4 class="MENUFONT-1st">Salads</h4>
+          <h5 class="MENUFONT-2nd">CHICKEN CAESER</h5>
+          <blockquote class="MENUFONT-3rd">
+            Sliced Tender Chicken Breast baked in Garlic Olive Oil served on a
+            bed of Romaine Lettuce, Croutons, Onions, Tomatoes and topped with
+            fresh Parmesan Cheese & Caesar Dressing. Served with Fresh Baked
+            Garlic Toast.<br>
+            <b>$7.99</b>
+          </blockquote>
+          <h5 class="MENUFONT-2nd">CHEF'S SALAD</h5>
+          <blockquote class="MENUFONT-3rd">
+            Crisp Lettuce, Tomatoes, Onions, Chopped Eggs, Cheese, Ham and
+            Turkey with your choice of Dressing. Served with Fresh Baked Garlic
+            Toast.<br>
+            <b>$8.79</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Salad List</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <div>
+          <h4 class="MENUFONT-1st">Sandwiches</h4>
+          <h5 class="MENUFONT-2nd">SUBMARINE TRADITIONAL</h5>
+          <blockquote class="MENUFONT-3rd">
+            Salami, Bologna, White Colby Cheese, Sliced Tomatoes, Onions,
+            Lettuce and Salad Dressing. Choose between 8, 16, and 24 inches.<br>
+            <b>$6.29/$12.29/$18.39</b>
+          </blockquote>
+          <h5 class="MENUFONT-2nd">REUBEN</h5>
+          <blockquote class="MENUFONT-3rd">
+            Hot Corned Beef, Creamy Swiss Cheese and Spiced Sauerkraut.<br>
+            <b>$7.99</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Sandwich List</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <div>
+          <h4 class="MENUFONT-1st">Appetizers</h4>
+          <h5 class="MENUFONT-2nd">NACHOS</h5>
+          <blockquote class="MENUFONT-3rd">
+            Chips with 8oz Hot Cheese.<br>
+            <b>$4.49</b>
+          </blockquote>
+          <h5 class="MENUFONT-2nd">BAKED POTATO SHELLS</h5>
+          <blockquote class="MENUFONT-3rd">
+            Filled with Sautéed Italian Onion Sausage , Cheddar and Parmesan
+            Cheese, Served with Sour Cream.<br>
+            <b>$6.99</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Appetizer List</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <div>
+          <h4 class="MENUFONT-1st">Spirits</h4>
+          <h5 class="MENUFONT-2nd">SCORPION</h5>
+          <blockquote class="MENUFONT-3rd">
+            Exotic Blend of Pineapple and Orange Juice, Gin, Rum and Creme de
+            Almond.<br>
+            <b>$8.50</b>
+          </blockquote>
+          <h5 class="MENUFONT-2nd">PIRATE'S COVE</h5>
+          <blockquote class="MENUFONT-3rd">
+            Spiced Rum, Blue Curacao, Lime Juice and Squirt.<br>
+            <b>$8.50</b>
+          </blockquote>
+          <blockquote >
+            <div class="menuA">
+              <a href="#">Complete Spirit List</a>
+            </div>
+          </blockquote>
+        </div>
+
+      </div>
+
+      <div class="tNb">
+        <h1 id="menu1" >Take N' Bake</h1>
+      </div>
+
+      <div class="therow">
+
+        <div class="thecolumn-1st">
+          <img src="images/thepizza.jpg" style="width:100%">
+        </div>
+        <div class="thecolumn-2nd">
+          <h2 class="thecolumn">Pizza to Go</h2>
+          <h3 class="thecolumn">Now, you can have our great pizza right from your own oven</h3>
+          <p  class="thecolumn">
+            <b>Option 1:</b> order your pizza Half-Baked (to take home and
+          finish later)
+        </p>
+
+        <p class="thecolumn">
+          <b>Option 2:</b> place your order for a Half-Baked-Frozen pizza to take home where you can keep it in your freezer
+         (Half-Baked-Frozen requires advanced notice)
+      </p>
+
+      <p class="thecolumn">The Shipping Shop can ship our pizzas to your friends and family!
+          Call them at 906-487-6167 for more information.
+          </p>
+
+          <b  class="thecolumn">Cooking Instructions:</b>
+          <ol class="thecolumn">
+            <li class="thecolumn">Thaw pizza (if frozen)</li>
+            <li class="thecolumn">Preheat oven to 375</li>
+            <li class="thecolumn">Place pizza directly on the oven rack</li>
+            <li class="thecolumn">Cook 10 to 25 minutes, until center is fully cooked</li>
+          </ol>
+
+        </div>
+
+      </div>
+
+
+    <footer>
+          <div class="footerC">
+          <ul>
+            <li>Visit us on <a class="footerlink"
+              href="https://www.facebook.com/ambohoughton/">Facebook</a></li>
+            <li>126 Shelden Ave, Houghton, MI 49931</li>
+            <li>(906)-482-5054</li>
+            <li><a class="footerlink" href=" ">Blog</a></li>
+          </ul>
+        </div>
+          <div id="footer-img">
+            <img src="images/ambassador_logo.png">
+          </div>
+    </footer>
+
+  </div>
+
+
+</body>
+</html>
